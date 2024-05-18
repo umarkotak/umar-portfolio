@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { Circle, Home } from "lucide-react";
 
 export default function Experience() {
@@ -30,11 +31,15 @@ export default function Experience() {
                 className="flex flex-col md:flex-row w-full md:justify-between md:items-center bg-yellow-50 p-2 rounded-lg"
               >
                 <div className="w-full flex items-center font-semibold">
-                  <Circle size={18} className="mr-2" />
+                  <Link href="#" className="avatar mr-2">
+                    <div className="w-8 rounded-full border border-black">
+                      <img src="https://media.licdn.com/dms/image/C560BAQGFwvJXfWZo_A/company-logo_100_100/0/1630654939373?e=1724284800&v=beta&t=KrFHJFRlPD9hMd8LeTfzT97clj-ScEUrsBoAyOb1z1A" />
+                    </div>
+                  </Link>
                   Basic Computer Lab Assistant
                 </div>
                 <div className="text-xs flex-none">
-                  Kolla - Indonesia
+                  Institut Teknologi PLN - Indonesia
                 </div>
               </div>
 
@@ -46,15 +51,11 @@ export default function Experience() {
 
                 <div className="text-xs md:text-sm mt-2">
                   <p>
-                    Participant of Kolla go scholar Ruby on Rails boot camp
-                    <br/><br/>
-                    Learn ruby programming language and ruby on rails framework
-                    <br/><br/>
-                    Output :
+                    - Assist students learning basic programming, eg: c++, c#, php, java, python
                     <br/>
-                    - Building simple online ride sharing application using rails and kafka
+                    - Build a web portal to help student on daily basis. Reporting, giving latest laboratory information, sharing files, collect task, and scoring task, generating report.
                     <br/>
-                    - Building caching location service using go
+                    - Maintain laboratory. Annually cleaning up the hardwares. Maintain computer performance. Set up LAN connection and local web server.
                   </p>
 
                 </div>
@@ -77,7 +78,11 @@ export default function Experience() {
                 className="flex flex-col md:flex-row w-full md:justify-between md:items-center bg-yellow-50 p-2 rounded-lg"
               >
                 <div className="w-full flex items-center font-semibold">
-                  <Circle size={18} className="mr-2" />
+                  <Link href="#" className="avatar mr-2">
+                    <div className="w-8 rounded-full border border-black">
+                      <img src="https://placehold.co/200" />
+                    </div>
+                  </Link>
                   Bootcamp Participant
                 </div>
                 <div className="text-xs flex-none">

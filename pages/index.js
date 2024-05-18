@@ -1,5 +1,5 @@
-import { Github, Linkedin } from 'lucide-react'
 import Link from 'next/link'
+import { Github, Linkedin } from 'lucide-react'
 
 export default function Home() {
   var currentYear = new Date().getFullYear()
