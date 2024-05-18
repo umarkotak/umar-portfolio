@@ -1,4 +1,4 @@
-import { Briefcase, CircleUser, Contact, Home, Layers3, LayoutTemplate, Menu } from 'lucide-react'
+import { Briefcase, CircleUser, Home, Layers3, LayoutTemplate, Menu } from 'lucide-react'
 import Link from 'next/link'
 import { useParams, usePathname } from 'next/navigation'
 import { useEffect } from 'react'
@@ -42,9 +42,6 @@ export default function Layout({ children }) {
               </li>
               <li className={`${genActive(pathname, "/projects")}`}>
                 <Link className='hover:bg-yellow-300' href="/projects"><LayoutTemplate size={14} /> Projects</Link>
-              </li>
-              <li className={`${genActive(pathname, "/contact")}`}>
-                <Link className='hover:bg-yellow-300' href="/contact"><Contact size={14} /> Contact</Link>
               </li>
             </ul>
           </div>
@@ -96,9 +93,6 @@ export default function Layout({ children }) {
           </li>
           <li className={`${genActive(pathname, "/projects")}`}>
             <Link className='hover:bg-yellow-300' href="/projects"><LayoutTemplate size={14} /> Products</Link>
-          </li>
-          <li className={`${genActive(pathname, "/contact")}`}>
-            <Link className='hover:bg-yellow-300' href="/contact"><Contact size={14} /> Contact</Link>
           </li>
         </ul>
       </div>
