@@ -1,7 +1,9 @@
-import { Briefcase, CircleUser, Contact, Home, LayoutTemplate, Menu } from 'lucide-react'
+import { Briefcase, CircleUser, Contact, Home, Layers3, LayoutTemplate, Menu } from 'lucide-react'
 import Link from 'next/link'
 import { useParams, usePathname } from 'next/navigation'
 import { useEffect } from 'react'
+
+var startWorkAt = 2019
 
 export default function Layout({ children }) {
   const pathname = usePathname()
@@ -49,9 +51,37 @@ export default function Layout({ children }) {
         </div>
 
         {/* Page content here */}
-        <main className=''>
+        <main className='min-h-screen'>
           {children}
         </main>
+
+        <footer className="footer p-10 bg-base-200 text-base-content">
+          <aside>
+            <Layers3 size={46} />
+
+            <p>M Umar R.<br/>Providing reliable tech since {startWorkAt}</p>
+          </aside>
+          <nav>
+            <h6 className="footer-title">Services</h6>
+            <a className="link link-hover">Branding</a>
+            <a className="link link-hover">Design</a>
+            <a className="link link-hover">Marketing</a>
+            <a className="link link-hover">Advertisement</a>
+          </nav>
+          <nav>
+            <h6 className="footer-title">Company</h6>
+            <a className="link link-hover">About us</a>
+            <a className="link link-hover">Contact</a>
+            <a className="link link-hover">Jobs</a>
+            <a className="link link-hover">Press kit</a>
+          </nav>
+          <nav>
+            <h6 className="footer-title">Legal</h6>
+            <a className="link link-hover">Terms of use</a>
+            <a className="link link-hover">Privacy policy</a>
+            <a className="link link-hover">Cookie policy</a>
+          </nav>
+        </footer>
       </div>
 
       <div className="drawer-side">

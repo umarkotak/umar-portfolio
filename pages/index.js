@@ -2,6 +2,12 @@ import { Github, Linkedin } from 'lucide-react'
 import Link from 'next/link'
 
 export default function Home() {
+  var currentYear = new Date().getFullYear()
+  var startCodeAt = 2015
+  var startCodeDur = currentYear - startCodeAt
+  var startWorkAt = 2019
+  var startWorkDur = currentYear - startWorkAt
+
   return (
     <main className="m-2">
       <div className="container max-w-4xl mx-auto">
@@ -21,6 +27,9 @@ export default function Home() {
             <div className="mt-2">
               <p className="tracking-wide">
                 I build various products in hope that it can help peoples.
+              </p>
+              <p className='tracking-wide text-xs'>
+                Coding since {startCodeAt} (~{startCodeDur} years) - Work since {startWorkAt} (~{startWorkDur} years)
               </p>
             </div>
             <div className="mt-4">
