@@ -22,7 +22,7 @@ export default function Home() {
               </span>
             </div>
             <div className="text-4xl font-semibold mt-2 tracking-wide">
-              Backend Engineer, FullStack Engineer, Creator, and Teacher.
+              Backend Engineer, FullStack Engineer, Content Creator, and Teacher.
             </div>
             <div className="mt-2">
               <p className="tracking-wide">

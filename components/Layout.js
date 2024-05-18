@@ -40,8 +40,8 @@ export default function Layout({ children }) {
               <li className={`${genActive(pathname, "/experience")}`}>
                 <Link className='hover:bg-yellow-300' href="/experience"><Briefcase size={14} /> Experience</Link>
               </li>
-              <li className={`${genActive(pathname, "/products")}`}>
-                <Link className='hover:bg-yellow-300' href="/products"><LayoutTemplate size={14} /> Products</Link>
+              <li className={`${genActive(pathname, "/projects")}`}>
+                <Link className='hover:bg-yellow-300' href="/projects"><LayoutTemplate size={14} /> Projects</Link>
               </li>
               <li className={`${genActive(pathname, "/contact")}`}>
                 <Link className='hover:bg-yellow-300' href="/contact"><Contact size={14} /> Contact</Link>
@@ -55,13 +55,13 @@ export default function Layout({ children }) {
           {children}
         </main>
 
-        <footer className="footer p-10 bg-base-200 text-base-content">
+        <footer className="footer p-10 bg-white text-black border-t mt-6">
           <aside>
             <Layers3 size={46} />
 
             <p>M Umar R.<br/>Providing reliable tech since {startWorkAt}</p>
           </aside>
-          <nav>
+          {/* <nav>
             <h6 className="footer-title">Services</h6>
             <a className="link link-hover">Branding</a>
             <a className="link link-hover">Design</a>
@@ -80,7 +80,7 @@ export default function Layout({ children }) {
             <a className="link link-hover">Terms of use</a>
             <a className="link link-hover">Privacy policy</a>
             <a className="link link-hover">Cookie policy</a>
-          </nav>
+          </nav> */}
         </footer>
       </div>
 
@@ -94,8 +94,8 @@ export default function Layout({ children }) {
           <li className={`${genActive(pathname, "/experience")}`}>
             <Link className='hover:bg-yellow-300' href="/experience"><Briefcase size={14} /> Experience</Link>
           </li>
-          <li className={`${genActive(pathname, "/products")}`}>
-            <Link className='hover:bg-yellow-300' href="/products"><LayoutTemplate size={14} /> Products</Link>
+          <li className={`${genActive(pathname, "/projects")}`}>
+            <Link className='hover:bg-yellow-300' href="/projects"><LayoutTemplate size={14} /> Products</Link>
           </li>
           <li className={`${genActive(pathname, "/contact")}`}>
             <Link className='hover:bg-yellow-300' href="/contact"><Contact size={14} /> Contact</Link>
