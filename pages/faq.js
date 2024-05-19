@@ -3,16 +3,26 @@ export default function Experience() {
     <main className="m-2">
       <div className="container max-w-4xl mx-auto">
         <div className="flex flex-col gap-2">
-          <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-200">
+          <div>
+            <span className="text-xl">Docs:</span>
+
+            <ul className="text-sm">
+              <li>- CV May 2024: TBA</li>
+            </ul>
+          </div>
+
+          <div className="divider"></div>
+
+          <div tabIndex={1} className="collapse collapse-arrow border border-base-300 bg-base-200">
             <div className="collapse-title text-xl font-medium">
-              Focus me to see content
+              Ruby experience
             </div>
             <div className="collapse-content">
-              <p>attribute is necessary to make the div focusable</p>
+              <p>TBA</p>
             </div>
           </div>
 
-          <div tabIndex={1} className="collapse collapse-arrow border border-base-300 bg-base-200">
+          <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-200">
             <div className="collapse-title text-xl font-medium">
               Cover letter
             </div>

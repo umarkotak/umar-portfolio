@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Github, Linkedin } from 'lucide-react'
+import { Github, Linkedin, Youtube } from 'lucide-react'
 
 export default function Home() {
   var currentYear = new Date().getFullYear()
@@ -30,10 +30,17 @@ export default function Home() {
               </p>
               <p className='tracking-wide text-xs'>
                 Coding since {startCodeAt} (~{startCodeDur} years) - Work since {startWorkAt} (~{startWorkDur} years)
+                <br/><br/>
+                I am based in Jakarta, Indonesia (South East Asia)
               </p>
             </div>
             <div className="mt-4">
               <div className="flex flex-row gap-2">
+                <Link href="https://www.youtube.com/channel/UCuyrJXEftl49X3zhLkD8mug">
+                  <div className="border rounded-lg border-yellow-300 bg-yellow-50 hover:bg-yellow-200 p-2">
+                    <Youtube size={28} />
+                  </div>
+                </Link>
                 <Link href="https://www.linkedin.com/in/muhammad-umar-ramadhana-476083141">
                   <div className="border rounded-lg border-yellow-300 bg-yellow-50 hover:bg-yellow-200 p-2">
                     <Linkedin size={28} />
@@ -46,6 +53,73 @@ export default function Home() {
                 </Link>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div className="my-24"></div>
+
+        <div>
+          <p className='text-center italic font-serif'>
+            I build and deliver <span className='bg-yellow-100 p-1'>tech products</span>
+            <br/>
+            <span className='bg-yellow-100 p-1'>From 0 to 1;</span> For personal and professional
+            <br/>
+            The product I build, hopefully, will <span className='bg-yellow-100 p-1'>solve your problem</span> and used by a lot of people
+            <br/>
+            I am super open on learning new tech
+            <br/>
+            You can see all my projects <Link className='text-blue-600' href="/projects">here</Link>
+            <br/>
+            Hope it is usefull for you ^^
+            <br/><br/>
+            If you are interested to connect, you can message my linkedin
+            <br/>
+            Or email me: <span className='text-blue-600'>codingmase@gmail.com</span>
+          </p>
+        </div>
+
+        <div className="my-24"></div>
+
+        <div className='w-full flex justify-center gap-4'>
+          <div>
+            <p className='text-sm tracking-wide text-center'>
+              <span className='bg-yellow-100 p-1'>Programming Language That I Use</span>
+              <br/>
+              Golang (active)
+              <br/>
+              Ruby (active)
+              <br/>
+              Javascript (active)
+              <br/>
+              Python
+              <br/>
+              PHP
+              <br/>
+              Java
+              <br/>
+            </p>
+          </div>
+          <div>
+            <p className='text-sm tracking-wide text-center'>
+            <span className='bg-yellow-100 p-1'>Other Tech That I Use</span>
+              <br/>
+              Postgresql
+              <br/>
+              Mongodb
+              <br/>
+              Redis
+              <br/>
+              Firebase
+              <br/>
+              Elasticsearch
+              <br/>
+              Cloud (Google, AWS, Tencent)
+              <br/>
+              Kafka
+              <br/>
+              Etc
+              <br/>
+            </p>
           </div>
         </div>
       </div>

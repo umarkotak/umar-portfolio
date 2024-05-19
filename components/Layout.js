@@ -54,7 +54,9 @@ export default function Layout({ children }) {
 
         <footer className="footer p-10 bg-white text-black border-t mt-6">
           <aside>
-            <Layers3 size={46} />
+            <Link href="/faq">
+              <Layers3 size={46} />
+            </Link>
 
             <p>M Umar R.<br/>Providing reliable tech since {startWorkAt}</p>
           </aside>
