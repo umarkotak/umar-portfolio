@@ -52,8 +52,48 @@ export default function Experience() {
           <div className="card w-full bg-base-100 shadow-xl">
             <figure className="relative">
               <img
+                src="/images/projects/live-everywhere-thumb.png"
+                alt="project-thumb"
+                className="object-contain"
+              />
+              <div className="absolute py-0.5 px-2 bg-yellow-200 rounded-full top-4 right-4 text-sm italic font-sans">
+                work - everywhereid
+              </div>
+            </figure>
+            <div className="p-4">
+              <h2 className="text-xl tracking-wide flex items-center">
+                Live Everywhere
+                <span className='px-2 py-0.5 rounded-full ml-2 bg-red-200 text-xs'>live</span>
+              </h2>
+              <div className=''>
+                {genTechStacks(["ruby on rails", "golang", "mongodb", "postgresql", "redis", "kafka"])}
+              </div>
+              <div className="flex flex-col justify-between min-h-28 mt-2">
+                <p className="text-sm tracking-wide">
+                  Everywhereid is a platform for content creator to do live streaming. With its new breakthroguh, online to offline performance - this allows content creator to live in multiple places at once.
+                </p>
+                <div className="card-actions justify-between items-center mt-2">
+                  <div className='text-sm font-semibold'>
+                    2023
+                  </div>
+
+                  <div className='flex flex-row gap-1'>
+                    {genProjectLinks(
+                      "",
+                      "",
+                      "https://live.everywhere.id",
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="card w-full bg-base-100 shadow-xl">
+            <figure className="relative">
+              <img
                 src="/images/projects/bukukaskita-thumb.png"
-                alt="Shoes"
+                alt="project-thumb"
                 className="object-contain"
               />
               <div className="absolute py-0.5 px-2 bg-yellow-200 rounded-full top-4 right-4 text-sm italic font-sans">
@@ -66,7 +106,7 @@ export default function Experience() {
                 <span className='px-2 py-0.5 rounded-full ml-2 bg-red-200 text-xs'>live</span>
               </h2>
               <div className=''>
-                {genTechStacks(["golang", "javascript", "reactjs"])}
+                {genTechStacks(["ruby on rails", "golang", "javascript", "reactjs", "postgresql"])}
               </div>
               <div className="flex flex-col justify-between min-h-28 mt-2">
                 <p className="text-sm tracking-wide">
@@ -74,14 +114,14 @@ export default function Experience() {
                 </p>
                 <div className="card-actions justify-between items-center mt-2">
                   <div className='text-sm font-semibold'>
-                    2023
+                    2020
                   </div>
 
                   <div className='flex flex-row gap-1'>
                     {genProjectLinks(
-                      "https://github.com/umarkotak/animapu-lite-nextjs",
+                      "https://github.com/umarkotak/dexpense",
                       "",
-                      "https://animapu.vercel.app",
+                      "https://bukukaskita.netlify.app",
                     )}
                   </div>
                 </div>
@@ -92,8 +132,8 @@ export default function Experience() {
           <div className="card w-full bg-base-100 shadow-xl">
             <figure className="relative">
               <img
-                src="/images/projects/animapu-v3-thumb.png"
-                alt="Shoes"
+                src="/images/projects/ytkidd-thumb.png"
+                alt="project-thumb"
                 className="object-contain"
               />
               <div className="absolute py-0.5 px-2 bg-yellow-200 rounded-full top-4 right-4 text-sm italic font-sans">
@@ -132,8 +172,88 @@ export default function Experience() {
           <div className="card w-full bg-base-100 shadow-xl">
             <figure className="relative">
               <img
+                src="/images/projects/animapu-v3-thumb.png"
+                alt="project-thumb"
+                className="object-contain"
+              />
+              <div className="absolute py-0.5 px-2 bg-yellow-200 rounded-full top-4 right-4 text-sm italic font-sans">
+                personal project
+              </div>
+            </figure>
+            <div className="p-4">
+              <h2 className="text-xl tracking-wide flex items-center">
+                Animapu V3
+                <span className='px-2 py-0.5 rounded-full ml-2 bg-red-200 text-xs'>live</span>
+              </h2>
+              <div className=''>
+                {genTechStacks(["golang", "javascript", "reactjs"])}
+              </div>
+              <div className="flex flex-col justify-between min-h-28 mt-2">
+                <p className="text-sm tracking-wide">
+                  Animapu V3 is build using nextjs. This is my first project for learning nextjs.
+                </p>
+                <div className="card-actions justify-between items-center mt-2">
+                  <div className='text-sm font-semibold'>
+                    2023
+                  </div>
+
+                  <div className='flex flex-row gap-1'>
+                    {genProjectLinks(
+                      "https://github.com/umarkotak/animapu-lite-nextjs",
+                      "",
+                      "https://animapu.vercel.app",
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="card w-full bg-base-100 shadow-xl">
+            <figure className="relative">
+              <img
+                src="/images/projects/animehub-thumb.png"
+                alt="project-thumb"
+                className="object-contain"
+              />
+              <div className="absolute py-0.5 px-2 bg-yellow-200 rounded-full top-4 right-4 text-sm italic font-sans">
+                personal project
+              </div>
+            </figure>
+            <div className="p-4">
+              <h2 className="text-xl tracking-wide flex items-center">
+                Animehub
+                <span className='px-2 py-0.5 rounded-full ml-2 bg-red-200 text-xs'>live</span>
+              </h2>
+              <div className=''>
+                {genTechStacks(["golang", "javascript", "nextjs"])}
+              </div>
+              <div className="flex flex-col justify-between min-h-28 mt-2">
+                <p className="text-sm tracking-wide">
+                  Animapu V3 is build using nextjs. This is my first project for learning nextjs.
+                </p>
+                <div className="card-actions justify-between items-center mt-2">
+                  <div className='text-sm font-semibold'>
+                    2023
+                  </div>
+
+                  <div className='flex flex-row gap-1'>
+                    {genProjectLinks(
+                      "https://github.com/umarkotak/animapu-lite-nextjs",
+                      "",
+                      "https://animapu.vercel.app",
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="card w-full bg-base-100 shadow-xl">
+            <figure className="relative">
+              <img
                 src="/images/projects/animapu-v2-thumb.png"
-                alt="Shoes"
+                alt="project-thumb"
                 className="object-contain"
               />
               <div className="absolute py-0.5 px-2 bg-yellow-200 rounded-full top-4 right-4 text-sm italic font-sans">
@@ -172,7 +292,7 @@ export default function Experience() {
             <figure className="relative">
               <img
                 src="/images/projects/certi-protect-thumb.png"
-                alt="Shoes"
+                alt="project-thumb"
                 className="object-contain"
               />
               <div className="absolute py-0.5 px-2 bg-yellow-200 rounded-full top-4 right-4 text-sm italic font-sans">
