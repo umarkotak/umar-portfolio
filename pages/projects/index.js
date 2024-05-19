@@ -17,11 +17,18 @@ export default function Experience() {
     )
   }
 
-  function genProjectLinks(gitUrl, detailUrl, projectUrl) {
+  function genProjectLinks(feGitUrl, beGitUrl, detailUrl, projectUrl) {
     return (
       <>
-        {gitUrl !== "" &&
-          <Link href={gitUrl}>
+        {beGitUrl !== "" &&
+          <Link href={beGitUrl}>
+            <div className="border rounded-lg border-yellow-300 bg-yellow-50 hover:bg-yellow-200 p-2">
+              <Github size={20} />
+            </div>
+          </Link>
+        }
+        {feGitUrl !== "" &&
+          <Link href={feGitUrl}>
             <div className="border rounded-lg border-yellow-300 bg-yellow-50 hover:bg-yellow-200 p-2">
               <Github size={20} />
             </div>
@@ -81,7 +88,49 @@ export default function Experience() {
                     {genProjectLinks(
                       "",
                       "",
+                      "",
                       "https://live.everywhere.id",
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="card w-full bg-base-100 shadow-xl">
+            <figure className="relative">
+              <img
+                src="/images/projects/best-lms-thumb.png"
+                alt="project-thumb"
+                className="object-contain"
+              />
+              <div className="absolute py-0.5 px-2 bg-yellow-200 rounded-full top-4 right-4 text-sm italic font-sans">
+                personal project
+              </div>
+            </figure>
+            <div className="p-4">
+              <h2 className="text-xl tracking-wide flex items-center">
+                Best LMS
+                <span className='px-2 py-0.5 rounded-full ml-2 bg-red-200 text-xs'>on dev</span>
+              </h2>
+              <div className=''>
+                {genTechStacks(["golang", "javascript", "nextjs", "postgresql"])}
+              </div>
+              <div className="flex flex-col justify-between min-h-28 mt-2">
+                <p className="text-sm tracking-wide">
+                  Best LMS (Learning Management System) - is an LMS build for schools in Indonesia. It is aimed to be hosted locally or globally. There are many features that can help the operational of school such as: payment, content management, student and teacher management, and many more.
+                </p>
+                <div className="card-actions justify-between items-center mt-2">
+                  <div className='text-sm font-semibold'>
+                    2024
+                  </div>
+
+                  <div className='flex flex-row gap-1'>
+                    {genProjectLinks(
+                      "https://github.com/umarkotak/go-lms-api",
+                      "",
+                      "",
+                      "",
                     )}
                   </div>
                 </div>
@@ -119,6 +168,7 @@ export default function Experience() {
 
                   <div className='flex flex-row gap-1'>
                     {genProjectLinks(
+                      "",
                       "https://github.com/umarkotak/dexpense",
                       "",
                       "https://bukukaskita.netlify.app",
@@ -142,15 +192,15 @@ export default function Experience() {
             </figure>
             <div className="p-4">
               <h2 className="text-xl tracking-wide flex items-center">
-                Animapu V3
+                YTKIDD
                 <span className='px-2 py-0.5 rounded-full ml-2 bg-red-200 text-xs'>live</span>
               </h2>
               <div className=''>
-                {genTechStacks(["golang", "javascript", "reactjs"])}
+                {genTechStacks(["javascript", "nextjs"])}
               </div>
               <div className="flex flex-col justify-between min-h-28 mt-2">
                 <p className="text-sm tracking-wide">
-                  Animapu V3 is build using nextjs. This is my first project for learning nextjs.
+                  YTKIDD is a Youtube alternative for kids. The content listed in ytkidd is manually curated, so it should not recommend any video outside of the list. YTKIDD also have a quiz feature so that your kids need to answer the quiz first before start watching.
                 </p>
                 <div className="card-actions justify-between items-center mt-2">
                   <div className='text-sm font-semibold'>
@@ -159,9 +209,51 @@ export default function Experience() {
 
                   <div className='flex flex-row gap-1'>
                     {genProjectLinks(
-                      "https://github.com/umarkotak/animapu-lite-nextjs",
                       "",
-                      "https://animapu.vercel.app",
+                      "https://github.com/umarkotak/ytkidd-nextjs",
+                      "",
+                      "https://ytkidd.vercel.app",
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="card w-full bg-base-100 shadow-xl">
+            <figure className="relative">
+              <img
+                src="/images/projects/vdub-thumb.png"
+                alt="project-thumb"
+                className="object-contain"
+              />
+              <div className="absolute py-0.5 px-2 bg-yellow-200 rounded-full top-4 right-4 text-sm italic font-sans">
+                personal project
+              </div>
+            </figure>
+            <div className="p-4">
+              <h2 className="text-xl tracking-wide flex items-center">
+                VDUB
+                <span className='px-2 py-0.5 rounded-full ml-2 bg-red-200 text-xs'>mvp ready</span>
+              </h2>
+              <div className=''>
+                {genTechStacks(["golang", "javascript", "nextjs"])}
+              </div>
+              <div className="flex flex-col justify-between min-h-28 mt-2">
+                <p className="text-sm tracking-wide">
+                  VDUB is a tool to automatically dub youtube video which contain English monolog into Indonesia.
+                </p>
+                <div className="card-actions justify-between items-center mt-2">
+                  <div className='text-sm font-semibold'>
+                    2024
+                  </div>
+
+                  <div className='flex flex-row gap-1'>
+                    {genProjectLinks(
+                      "https://github.com/umarkotak/vdub",
+                      "",
+                      "",
+                      "",
                     )}
                   </div>
                 </div>
@@ -186,7 +278,7 @@ export default function Experience() {
                 <span className='px-2 py-0.5 rounded-full ml-2 bg-red-200 text-xs'>live</span>
               </h2>
               <div className=''>
-                {genTechStacks(["golang", "javascript", "reactjs"])}
+                {genTechStacks(["golang", "javascript", "nextjs"])}
               </div>
               <div className="flex flex-col justify-between min-h-28 mt-2">
                 <p className="text-sm tracking-wide">
@@ -199,6 +291,7 @@ export default function Experience() {
 
                   <div className='flex flex-row gap-1'>
                     {genProjectLinks(
+                      "",
                       "https://github.com/umarkotak/animapu-lite-nextjs",
                       "",
                       "https://animapu.vercel.app",
@@ -223,14 +316,14 @@ export default function Experience() {
             <div className="p-4">
               <h2 className="text-xl tracking-wide flex items-center">
                 Animehub
-                <span className='px-2 py-0.5 rounded-full ml-2 bg-red-200 text-xs'>live</span>
+                <span className='px-2 py-0.5 rounded-full ml-2 bg-red-200 text-xs'>on maintenance</span>
               </h2>
               <div className=''>
                 {genTechStacks(["golang", "javascript", "nextjs"])}
               </div>
               <div className="flex flex-col justify-between min-h-28 mt-2">
                 <p className="text-sm tracking-wide">
-                  Animapu V3 is build using nextjs. This is my first project for learning nextjs.
+                  Animehub is a site for watching anime. The anime list provided here is scrapped from external sources.
                 </p>
                 <div className="card-actions justify-between items-center mt-2">
                   <div className='text-sm font-semibold'>
@@ -239,9 +332,10 @@ export default function Experience() {
 
                   <div className='flex flex-row gap-1'>
                     {genProjectLinks(
-                      "https://github.com/umarkotak/animapu-lite-nextjs",
                       "",
-                      "https://animapu.vercel.app",
+                      "https://github.com/umarkotak/animehub-nextjs",
+                      "",
+                      "https://animehub-lite.vercel.app",
                     )}
                   </div>
                 </div>
@@ -278,6 +372,7 @@ export default function Experience() {
 
                   <div className='flex flex-row gap-1'>
                     {genProjectLinks(
+                      "",
                       "https://github.com/umarkotak/umaranimap",
                       "",
                       "https://animapu.netlify.app",
@@ -320,6 +415,7 @@ export default function Experience() {
 
                   <div className='flex flex-row gap-1'>
                     {genProjectLinks(
+                      "",
                       "https://github.com/umarkotak/sweet_stego",
                       "",
                       "",
