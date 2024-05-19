@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Experience() {
   return (
     <main className="m-2">
@@ -7,7 +9,15 @@ export default function Experience() {
             <span className="text-xl">Docs:</span>
 
             <ul className="text-sm">
-              <li>- CV May 2024: TBA</li>
+              <li>
+                - CV May 2024:
+                <Link
+                  className="text-blue-600"
+                  href="https://docs.google.com/document/d/1zxk0OJnqzLl7G22fqfeN4xyxt0rvNuKzzaRQjTm1oyk"
+                >
+                  https://docs.google.com/document/d/1zxk0OJnqzLl7G22fqfeN4xyxt0rvNuKzzaRQjTm1oyk
+                </Link>
+              </li>
             </ul>
           </div>
 
