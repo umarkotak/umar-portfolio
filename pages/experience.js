@@ -43,7 +43,7 @@ export default function Experience() {
                   Back End Engineer Lead
                 </div>
                 <div className="text-xs flex-none">
-                  <b>Bukukaskita</b> - Indonesia
+                  <b>Everywhere.id</b> - Indonesia
                 </div>
               </div>
 
