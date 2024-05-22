@@ -18,6 +18,24 @@ export default function Experience() {
                   https://docs.google.com/document/d/1zxk0OJnqzLl7G22fqfeN4xyxt0rvNuKzzaRQjTm1oyk
                 </Link>
               </li>
+              <li>
+                - CV May 2024 pdf:
+                <Link
+                  className="text-blue-600"
+                  href="/docs_data/cv-2024_may.pdf"
+                >
+                  cv pdf
+                </Link>
+              </li>
+              <li>
+                - Cover letter May 2024 pdf:
+                <Link
+                  className="text-blue-600"
+                  href="/docs_data/cover_letter-2024_may.pdf"
+                >
+                  cover letter pdf
+                </Link>
+              </li>
             </ul>
           </div>
 
