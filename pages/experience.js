@@ -4,16 +4,16 @@ import { Circle, Home } from "lucide-react";
 export default function Experience() {
   function genTechStacks(stacks) {
     return (
-      <p className="overflow-auto break-all">
+      <div className="flex flex-wrap gap-1">
         {stacks.map((stack) => (
-          <span
+          <div
             key={stack}
-            className="bg-yellow-50 border border-yellow-300 rounded-full px-2 py-0.5 text-xs flex-none mr-1"
+            className="bg-yellow-50 border border-yellow-300 rounded-full px-2 py-0.5 text-xs flex-none"
           >
             {stack}
-          </span>
+          </div>
         ))}
-      </p>
+      </div>
     )
   }
 
@@ -70,10 +70,10 @@ export default function Experience() {
                     <br/>
                     - Migrate infrastructure from Google Cloud to Tencent Cloud
                     <br/>
-                    - Make internal tools to manage k8s ENV using kubeseal - <a href="https://github.com/umarkotak/go-kubeseal-gui">https://github.com/umarkotak/go-kubeseal-gui</a>
+                    - Make internal tools to manage k8s ENV using kubeseal - <a className='text-blue-500' href="https://github.com/umarkotak/go-kubeseal-gui">https://github.com/umarkotak/go-kubeseal-gui</a>
 
                     <br/><br/>
-                    play everywhere: <a href="https://play.everywhere.id">https://play.everywhere.id</a>
+                    play everywhere: <a className='text-blue-500' href="https://play.everywhere.id">https://play.everywhere.id</a>
                   </p>
                 </div>
               </div>
@@ -119,9 +119,9 @@ export default function Experience() {
                     <br/>
                     Record daily transaction, Voice to transaction, Receipt image to transaction, Dashboard to show current balance of each wallets, Statistical dashboard, Investing simulation, Budgeting, Gold prices wallet with loss and gain tracker, Wealth asset management.
                     <br/><br/>
-                    <a href="https://bukukaskita.netlify.app">https://bukukaskita.netlify.app</a>
+                    <a className='text-blue-500' href="https://bukukaskita.netlify.app">https://bukukaskita.netlify.app</a>
                     <br/>
-                    <a href="https://www.linkedin.com/company/bukukaskita">https://www.linkedin.com/company/bukukaskita</a>
+                    <a className='text-blue-500' href="https://www.linkedin.com/company/bukukaskita">https://www.linkedin.com/company/bukukaskita</a>
                   </p>
                 </div>
               </div>
@@ -481,7 +481,6 @@ export default function Experience() {
                     <br/>
                     - Building caching location service using go
                   </p>
-
                 </div>
               </div>
             </div>

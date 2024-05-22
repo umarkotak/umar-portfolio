@@ -28,7 +28,7 @@ export default function Experience() {
                 </Link>
               </li>
               <li>
-                - Cover letter May 2024 pdf:
+                - Cover letter May 2024 pdf - influx:
                 <Link
                   className="text-blue-600"
                   href="/docs_data/cover_letter-2024_may.pdf"
