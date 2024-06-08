@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import { Eye, Github, Link2 } from 'lucide-react'
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
 
 export default function Experience() {
   function genTechStacks(stacks) {
@@ -52,23 +54,40 @@ export default function Experience() {
     )
   }
 
+  function thumbsGen(thumbs) {
+    return (<div className='flex flex-wrap gap-2'>
+      {thumbs.map((v)=>(<Zoom key={v}>
+        <img
+          src={v}
+          alt="project-thumb"
+          className="w-16 h-16 object-cover rounded-lg"
+        />
+      </Zoom>))}
+    </div>)
+  }
+
   return (
     <main className="m-2">
       <div className="container max-w-4xl mx-auto">
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="card w-full bg-base-100 shadow-xl">
             <figure className="relative">
-              <img
+              <Zoom><img
                 src="/images/projects/live-everywhere-thumb.png"
                 alt="project-thumb"
                 className="object-contain"
-              />
+              /></Zoom>
               <div className="absolute py-0.5 px-2 bg-yellow-200 rounded-full top-4 right-4 text-sm italic font-sans">
                 work - everywhereid
               </div>
             </figure>
             <div className="p-4">
-              <h2 className="text-xl tracking-wide flex items-center">
+              {thumbsGen([
+                "/images/projects/live-everywhere-thumb-2.png",
+                "/images/projects/live-everywhere-thumb-3.png",
+                "/images/projects/live-everywhere-thumb-4.png",
+              ])}
+              <h2 className="text-xl tracking-wide flex items-center mt-2">
                 Live Everywhere
                 <span className='px-2 py-0.5 rounded-full ml-2 bg-red-200 text-xs'>live</span>
               </h2>
@@ -99,17 +118,19 @@ export default function Experience() {
 
           <div className="card w-full bg-base-100 shadow-xl">
             <figure className="relative">
-              <img
+              <Zoom><img
                 src="/images/projects/best-lms-thumb.png"
                 alt="project-thumb"
                 className="object-contain"
-              />
+              /></Zoom>
               <div className="absolute py-0.5 px-2 bg-yellow-200 rounded-full top-4 right-4 text-sm italic font-sans">
                 personal project
               </div>
             </figure>
             <div className="p-4">
-              <h2 className="text-xl tracking-wide flex items-center">
+              {thumbsGen([
+              ])}
+              <h2 className="text-xl tracking-wide flex items-center mt-2">
                 Best LMS
                 <span className='px-2 py-0.5 rounded-full ml-2 bg-red-200 text-xs'>on dev</span>
               </h2>
@@ -140,17 +161,19 @@ export default function Experience() {
 
           <div className="card w-full bg-base-100 shadow-xl">
             <figure className="relative">
-              <img
+              <Zoom><img
                 src="/images/projects/bukukaskita-thumb.png"
                 alt="project-thumb"
                 className="object-contain"
-              />
+              /></Zoom>
               <div className="absolute py-0.5 px-2 bg-yellow-200 rounded-full top-4 right-4 text-sm italic font-sans">
                 personal project
               </div>
             </figure>
             <div className="p-4">
-              <h2 className="text-xl tracking-wide flex items-center">
+              {thumbsGen([
+              ])}
+              <h2 className="text-xl tracking-wide flex items-center mt-2">
                 Bukukas Kita
                 <span className='px-2 py-0.5 rounded-full ml-2 bg-red-200 text-xs'>live</span>
               </h2>
@@ -181,17 +204,19 @@ export default function Experience() {
 
           <div className="card w-full bg-base-100 shadow-xl">
             <figure className="relative">
-              <img
+              <Zoom><img
                 src="/images/projects/go-kubeseal-gui-thumb.png"
                 alt="project-thumb"
                 className="object-contain"
-              />
+              /></Zoom>
               <div className="absolute py-0.5 px-2 bg-yellow-200 rounded-full top-4 right-4 text-sm italic font-sans">
                 personal project
               </div>
             </figure>
             <div className="p-4">
-              <h2 className="text-xl tracking-wide flex items-center">
+              {thumbsGen([
+              ])}
+              <h2 className="text-xl tracking-wide flex items-center mt-2">
                 Go Kubeseal GUI
               </h2>
               <div className=''>
@@ -221,17 +246,19 @@ export default function Experience() {
 
           <div className="card w-full bg-base-100 shadow-xl">
             <figure className="relative">
-              <img
+              <Zoom><img
                 src="/images/projects/ytkidd-thumb.png"
                 alt="project-thumb"
                 className="object-contain"
-              />
+              /></Zoom>
               <div className="absolute py-0.5 px-2 bg-yellow-200 rounded-full top-4 right-4 text-sm italic font-sans">
                 personal project
               </div>
             </figure>
             <div className="p-4">
-              <h2 className="text-xl tracking-wide flex items-center">
+              {thumbsGen([
+              ])}
+              <h2 className="text-xl tracking-wide flex items-center mt-2">
                 YTKIDD
                 <span className='px-2 py-0.5 rounded-full ml-2 bg-red-200 text-xs'>live</span>
               </h2>
@@ -262,17 +289,19 @@ export default function Experience() {
 
           <div className="card w-full bg-base-100 shadow-xl">
             <figure className="relative">
-              <img
+              <Zoom><img
                 src="/images/projects/vdub-thumb.png"
                 alt="project-thumb"
                 className="object-contain"
-              />
+              /></Zoom>
               <div className="absolute py-0.5 px-2 bg-yellow-200 rounded-full top-4 right-4 text-sm italic font-sans">
                 personal project
               </div>
             </figure>
             <div className="p-4">
-              <h2 className="text-xl tracking-wide flex items-center">
+              {thumbsGen([
+              ])}
+              <h2 className="text-xl tracking-wide flex items-center mt-2">
                 VDUB
                 <span className='px-2 py-0.5 rounded-full ml-2 bg-red-200 text-xs'>mvp ready</span>
               </h2>
@@ -303,17 +332,19 @@ export default function Experience() {
 
           <div className="card w-full bg-base-100 shadow-xl">
             <figure className="relative">
-              <img
+              <Zoom><img
                 src="/images/projects/neng-gemini-thumb.png"
                 alt="project-thumb"
                 className="object-contain"
-              />
+              /></Zoom>
               <div className="absolute py-0.5 px-2 bg-yellow-200 rounded-full top-4 right-4 text-sm italic font-sans">
                 personal project
               </div>
             </figure>
             <div className="p-4">
-              <h2 className="text-xl tracking-wide flex items-center">
+              {thumbsGen([
+              ])}
+              <h2 className="text-xl tracking-wide flex items-center mt-2">
                 Neng Gemini
                 <span className='px-2 py-0.5 rounded-full ml-2 bg-red-200 text-xs'>live</span>
               </h2>
@@ -344,17 +375,19 @@ export default function Experience() {
 
           <div className="card w-full bg-base-100 shadow-xl">
             <figure className="relative">
-              <img
+              <Zoom><img
                 src="/images/projects/animapu-v3-thumb.png"
                 alt="project-thumb"
                 className="object-contain"
-              />
+              /></Zoom>
               <div className="absolute py-0.5 px-2 bg-yellow-200 rounded-full top-4 right-4 text-sm italic font-sans">
                 personal project
               </div>
             </figure>
             <div className="p-4">
-              <h2 className="text-xl tracking-wide flex items-center">
+              {thumbsGen([
+              ])}
+              <h2 className="text-xl tracking-wide flex items-center mt-2">
                 Animapu V3
                 <span className='px-2 py-0.5 rounded-full ml-2 bg-red-200 text-xs'>live</span>
               </h2>
@@ -385,17 +418,19 @@ export default function Experience() {
 
           <div className="card w-full bg-base-100 shadow-xl">
             <figure className="relative">
-              <img
+              <Zoom><img
                 src="/images/projects/animehub-thumb.png"
                 alt="project-thumb"
                 className="object-contain"
-              />
+              /></Zoom>
               <div className="absolute py-0.5 px-2 bg-yellow-200 rounded-full top-4 right-4 text-sm italic font-sans">
                 personal project
               </div>
             </figure>
             <div className="p-4">
-              <h2 className="text-xl tracking-wide flex items-center">
+              {thumbsGen([
+              ])}
+              <h2 className="text-xl tracking-wide flex items-center mt-2">
                 Animehub
                 <span className='px-2 py-0.5 rounded-full ml-2 bg-red-200 text-xs'>on maintenance</span>
               </h2>
@@ -426,17 +461,19 @@ export default function Experience() {
 
           <div className="card w-full bg-base-100 shadow-xl">
             <figure className="relative">
-              <img
+              <Zoom><img
                 src="/images/projects/animapu-v2-thumb.png"
                 alt="project-thumb"
                 className="object-contain"
-              />
+              /></Zoom>
               <div className="absolute py-0.5 px-2 bg-yellow-200 rounded-full top-4 right-4 text-sm italic font-sans">
                 personal project
               </div>
             </figure>
             <div className="p-4">
-              <h2 className="text-xl tracking-wide flex items-center">
+              {thumbsGen([
+              ])}
+              <h2 className="text-xl tracking-wide flex items-center mt-2">
                 Animapu V2
               </h2>
               <div className=''>
@@ -466,11 +503,11 @@ export default function Experience() {
 
           <div className="card w-full bg-base-100 shadow-xl">
             <figure className="relative">
-              <img
+              <Zoom><img
                 src="/images/projects/certi-protect-thumb.png"
                 alt="project-thumb"
                 className="object-contain"
-              />
+              /></Zoom>
               <div className="absolute py-0.5 px-2 bg-yellow-200 rounded-full top-4 right-4 text-sm italic font-sans">
                 university final project
               </div>
