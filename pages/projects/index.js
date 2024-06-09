@@ -60,7 +60,7 @@ export default function Experience() {
         <img
           src={v}
           alt="project-thumb"
-          className="w-16 h-16 object-cover rounded-lg"
+          className="w-16 h-16 object-cover rounded-lg border border-yellow-500 shadow-inner"
         />
       </Zoom>))}
     </div>)
@@ -129,6 +129,8 @@ export default function Experience() {
             </figure>
             <div className="p-4">
               {thumbsGen([
+                "/images/projects/best-lms-thumb-2.png",
+                "/images/projects/best-lms-thumb-3.png",
               ])}
               <h2 className="text-xl tracking-wide flex items-center mt-2">
                 Best LMS
@@ -172,6 +174,9 @@ export default function Experience() {
             </figure>
             <div className="p-4">
               {thumbsGen([
+                "/images/projects/bukukaskita-thumb-2.png",
+                "/images/projects/bukukaskita-thumb-3.png",
+                "/images/projects/bukukaskita-thumb-4.png",
               ])}
               <h2 className="text-xl tracking-wide flex items-center mt-2">
                 Bukukas Kita
@@ -257,6 +262,9 @@ export default function Experience() {
             </figure>
             <div className="p-4">
               {thumbsGen([
+                "/images/projects/ytkidd-thumb-2.png",
+                "/images/projects/ytkidd-thumb-3.png",
+                "/images/projects/ytkidd-thumb-4.png",
               ])}
               <h2 className="text-xl tracking-wide flex items-center mt-2">
                 YTKIDD
@@ -429,6 +437,8 @@ export default function Experience() {
             </figure>
             <div className="p-4">
               {thumbsGen([
+                "/images/projects/animehub-thumb-2.png",
+                "/images/projects/animehub-thumb-3.png",
               ])}
               <h2 className="text-xl tracking-wide flex items-center mt-2">
                 Animehub
