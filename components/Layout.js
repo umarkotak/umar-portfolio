@@ -94,7 +94,7 @@ export default function Layout({ children }) {
             <Link className='hover:bg-yellow-300' href="/experience"><Briefcase size={14} /> Experience</Link>
           </li>
           <li className={`${genActive(pathname, "/projects")}`}>
-            <Link className='hover:bg-yellow-300' href="/projects"><LayoutTemplate size={14} /> Products</Link>
+            <Link className='hover:bg-yellow-300' href="/projects"><LayoutTemplate size={14} /> Projects</Link>
           </li>
         </ul>
       </div>

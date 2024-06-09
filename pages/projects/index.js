@@ -394,6 +394,8 @@ export default function Experience() {
             </figure>
             <div className="p-4">
               {thumbsGen([
+                "/images/projects/animapu-v3-thumb-2.png",
+                "/images/projects/animapu-v3-thumb-3.png",
               ])}
               <h2 className="text-xl tracking-wide flex items-center mt-2">
                 Animapu V3
