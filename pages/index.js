@@ -122,6 +122,14 @@ export default function Home() {
             </p>
           </div>
         </div>
+
+        <div className="my-24"></div>
+
+        <div className='w-full flex justify-center gap-4'>
+          <p className='text-sm tracking-wide text-center'>
+            docs updated at: 26 november 2024 - 17:00
+          </p>
+        </div>
       </div>
     </main>
   )

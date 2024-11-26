@@ -96,7 +96,7 @@ export default function Experience() {
               </div>
               <div className="flex flex-col justify-between min-h-28 mt-2">
                 <p className="text-sm tracking-wide">
-                  Everywhereid is a platform for content creator to do live streaming. With its new breakthroguh, online to offline performance - this allows content creator to live in multiple places at once.
+                  Everywhereid is a platform for content creator to do live streaming. With its new breakthroguh, online to offline performance - this allows content creator to live in multiple places at once such as in mall, food court, cafe, train station, etc.
                 </p>
                 <div className="card-actions justify-between items-center mt-2">
                   <div className='text-sm font-semibold'>
@@ -108,7 +108,7 @@ export default function Experience() {
                       "",
                       "",
                       "",
-                      "https://live.everywhere.id",
+                      "https://play.everywhere.id",
                     )}
                   </div>
                 </div>
@@ -134,7 +134,7 @@ export default function Experience() {
               ])}
               <h2 className="text-xl tracking-wide flex items-center mt-2">
                 Best LMS
-                <span className='px-2 py-0.5 rounded-full ml-2 bg-red-200 text-xs'>on dev</span>
+                <span className='px-2 py-0.5 rounded-full ml-2 bg-red-200 text-xs'>on hold</span>
               </h2>
               <div className=''>
                 {genTechStacks(["golang", "javascript", "nextjs", "postgresql"])}
@@ -252,6 +252,51 @@ export default function Experience() {
           <div className="card w-full bg-base-100 shadow-xl">
             <figure className="relative">
               <Zoom><img
+                src="/images/projects/satuakun-thumb.png"
+                alt="project-thumb"
+                className="object-contain"
+              /></Zoom>
+              <div className="absolute py-0.5 px-2 bg-yellow-200 rounded-full top-4 right-4 text-sm italic font-sans">
+                personal project
+              </div>
+            </figure>
+            <div className="p-4">
+              {thumbsGen([
+                "/images/projects/satuakun-thumb-2.png",
+                "/images/projects/satuakun-thumb-3.png",
+              ])}
+              <h2 className="text-xl tracking-wide flex items-center mt-2">
+                Satu Akun
+                <span className='px-2 py-0.5 rounded-full ml-2 bg-red-200 text-xs'>live</span>
+              </h2>
+              <div className=''>
+                {genTechStacks(["golang", "nextjs", "html", "chrome extension"])}
+              </div>
+              <div className="flex flex-col justify-between min-h-28 mt-2">
+                <p className="text-sm tracking-wide">
+                  Satuakun is a chrome extension that allows you to share your web cookies. The use case is, if you want to share your account, eg: you want to share your netflix account without having to tell your friends or families your netflix email and password. You can just simply share your cookies then let your friends or families use your cookies through this extension.
+                </p>
+                <div className="card-actions justify-between items-center mt-2">
+                  <div className='text-sm font-semibold'>
+                    2024
+                  </div>
+
+                  <div className='flex flex-row gap-1'>
+                    {genProjectLinks(
+                      "",
+                      "https://github.com/umarkotak/satu-akun-nextjs",
+                      "",
+                      "https://satuakun.vercel.app",
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="card w-full bg-base-100 shadow-xl">
+            <figure className="relative">
+              <Zoom><img
                 src="/images/projects/ytkidd-thumb.png"
                 alt="project-thumb"
                 className="object-contain"
@@ -311,7 +356,8 @@ export default function Experience() {
               ])}
               <h2 className="text-xl tracking-wide flex items-center mt-2">
                 VDUB
-                <span className='px-2 py-0.5 rounded-full ml-2 bg-red-200 text-xs'>mvp ready</span>
+                <span className='px-2 py-0.5 rounded-full ml-2 bg-red-200 text-xs'>live</span>
+                <span className='px-2 py-0.5 rounded-full ml-2 bg-red-200 text-xs'>dockerfile</span>
               </h2>
               <div className=''>
                 {genTechStacks(["golang", "javascript", "nextjs"])}
@@ -351,6 +397,7 @@ export default function Experience() {
             </figure>
             <div className="p-4">
               {thumbsGen([
+                "/images/projects/neng-gemini-thumb-2.png",
               ])}
               <h2 className="text-xl tracking-wide flex items-center mt-2">
                 Neng Gemini
@@ -444,7 +491,7 @@ export default function Experience() {
               ])}
               <h2 className="text-xl tracking-wide flex items-center mt-2">
                 Animehub
-                <span className='px-2 py-0.5 rounded-full ml-2 bg-red-200 text-xs'>on maintenance</span>
+                <span className='px-2 py-0.5 rounded-full ml-2 bg-red-200 text-xs'>live</span>
               </h2>
               <div className=''>
                 {genTechStacks(["golang", "javascript", "nextjs"])}

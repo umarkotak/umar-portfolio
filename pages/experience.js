@@ -37,7 +37,7 @@ export default function Experience() {
                 <div className="w-full flex items-center font-semibold">
                   <Link href="#" className="avatar mr-2">
                     <div className="w-8 rounded-full border border-black">
-                      <img src="https://media.licdn.com/dms/image/D560BAQHnC2IqLmi-VQ/company-logo_100_100/0/1695009906533/everywhere_id_logo?e=1724284800&v=beta&t=PQO8Q6FyZnLASd4cbaUnTnQ-pLA1TBn2OSmzuNYg-0I" />
+                      <img src="/images/projects/logo_everywhereid.jpeg" />
                     </div>
                   </Link>
                   Back End Engineer Lead
@@ -71,6 +71,10 @@ export default function Experience() {
                     - Migrate infrastructure from Google Cloud to Tencent Cloud
                     <br/>
                     - Make internal tools to manage k8s ENV using kubeseal - <a className='text-blue-500' href="https://github.com/umarkotak/go-kubeseal-gui">https://github.com/umarkotak/go-kubeseal-gui</a>
+                    <br/>
+                    - Build ad system. You can have both entertainment and advertisement in public places in realtime
+                    <br/>
+                    - Integrate ad with face recognition to count how many impression happen in realtime
 
                     <br/><br/>
                     play everywhere: <a className='text-blue-500' href="https://play.everywhere.id">https://play.everywhere.id</a>
@@ -96,7 +100,7 @@ export default function Experience() {
                 <div className="w-full flex items-center font-semibold">
                   <Link href="#" className="avatar mr-2">
                     <div className="w-8 rounded-full border border-black">
-                      <img src="https://media.licdn.com/dms/image/C560BAQHU_kZkfV1EKg/company-logo_100_100/0/1645177386143?e=1724284800&v=beta&t=ygNqJHueNIqu964wIPNkDmIE9w-lMIveIex9xfPnac0" />
+                      <img src="/images/projects/logo_bukukaskita.jpeg" />
                     </div>
                   </Link>
                   Founder & Full Stack Engineer
@@ -145,7 +149,7 @@ export default function Experience() {
                 <div className="w-full flex items-center font-semibold">
                   <Link href="#" className="avatar mr-2">
                     <div className="w-8 rounded-full border border-black">
-                      <img src="https://media.licdn.com/dms/image/C4D0BAQHCmfKRtPXKDg/company-logo_100_100/0/1658813682786/gojek_logo?e=1724284800&v=beta&t=mjAR1lGmRB8OKPQBokvqCuhr9kh-UZKVoG5-RxaXJk8" />
+                      <img src="/images/projects/logo_goto.jpeg" />
                     </div>
                   </Link>
                   Go Play Back End Tech Lead
@@ -204,7 +208,7 @@ export default function Experience() {
                 <div className="w-full flex items-center font-semibold">
                   <Link href="#" className="avatar mr-2">
                     <div className="w-8 rounded-full border border-black">
-                      <img src="https://media.licdn.com/dms/image/C4D0BAQHCmfKRtPXKDg/company-logo_100_100/0/1658813682786/gojek_logo?e=1724284800&v=beta&t=mjAR1lGmRB8OKPQBokvqCuhr9kh-UZKVoG5-RxaXJk8" />
+                      <img src="/images/projects/logo_goto.jpeg" />
                     </div>
                   </Link>
                   Go Play Back End Developer
@@ -255,7 +259,7 @@ export default function Experience() {
                 <div className="w-full flex items-center font-semibold">
                   <Link href="#" className="avatar mr-2">
                     <div className="w-8 rounded-full border border-black">
-                      <img src="https://media.licdn.com/dms/image/C4D0BAQHCmfKRtPXKDg/company-logo_100_100/0/1658813682786/gojek_logo?e=1724284800&v=beta&t=mjAR1lGmRB8OKPQBokvqCuhr9kh-UZKVoG5-RxaXJk8" />
+                      <img src="/images/projects/logo_goto.jpeg" />
                     </div>
                   </Link>
                   Go Life Back End Developer
@@ -305,7 +309,7 @@ export default function Experience() {
                 <div className="w-full flex items-center font-semibold">
                   <Link href="#" className="avatar mr-2">
                     <div className="w-8 rounded-full border border-black">
-                      <img src="https://media.licdn.com/dms/image/C4D0BAQHCmfKRtPXKDg/company-logo_100_100/0/1658813682786/gojek_logo?e=1724284800&v=beta&t=mjAR1lGmRB8OKPQBokvqCuhr9kh-UZKVoG5-RxaXJk8" />
+                      <img src="/images/projects/logo_goto.jpeg" />
                     </div>
                   </Link>
                   PIC Back End Go Life Service Marketplace
@@ -357,7 +361,7 @@ export default function Experience() {
                 <div className="w-full flex items-center font-semibold">
                   <Link href="#" className="avatar mr-2">
                     <div className="w-8 rounded-full border border-black">
-                      <img src="https://media.licdn.com/dms/image/C4D0BAQHCmfKRtPXKDg/company-logo_100_100/0/1658813682786/gojek_logo?e=1724284800&v=beta&t=mjAR1lGmRB8OKPQBokvqCuhr9kh-UZKVoG5-RxaXJk8" />
+                      <img src="/images/projects/logo_goto.jpeg" />
                     </div>
                   </Link>
                   Trainee
@@ -406,7 +410,7 @@ export default function Experience() {
                 <div className="w-full flex items-center font-semibold">
                   <Link href="#" className="avatar mr-2">
                     <div className="w-8 rounded-full border border-black">
-                      <img src="https://media.licdn.com/dms/image/C560BAQGFwvJXfWZo_A/company-logo_100_100/0/1630654939373?e=1724284800&v=beta&t=KrFHJFRlPD9hMd8LeTfzT97clj-ScEUrsBoAyOb1z1A" />
+                      <img src="/images/projects/logo_itpln.jpeg" />
                     </div>
                   </Link>
                   Basic Computer Lab Assistant
@@ -453,7 +457,7 @@ export default function Experience() {
                 <div className="w-full flex items-center font-semibold">
                   <Link href="#" className="avatar mr-2">
                     <div className="w-8 rounded-full border border-black">
-                      <img src="https://placehold.co/200" />
+                      <img src="/images/projects/logo_goto.jpeg" />
                     </div>
                   </Link>
                   Bootcamp Participant
