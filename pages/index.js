@@ -125,10 +125,9 @@ export default function Home() {
 
         <div className="my-24"></div>
 
-        <div className='w-full flex justify-center gap-4'>
-          <p className='text-sm tracking-wide text-center'>
-            docs updated at: 26 november 2024 - 17:00
-          </p>
+        <div className='w-full flex flex-col items-center justify-center gap-2 text-sm tracking-wide text-center'>
+          <p>last updated at: 26 november 2024 - 17:00</p>
+          <p>last updated at: 24 january 2025 - 11:00</p>
         </div>
       </div>
     </main>

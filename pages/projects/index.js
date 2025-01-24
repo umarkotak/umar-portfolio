@@ -69,7 +69,7 @@ export default function Experience() {
   return (
     <main className="m-2">
       <div className="container max-w-4xl mx-auto">
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className="card w-full bg-base-100 shadow-xl">
             <figure className="relative">
               <Zoom><img
@@ -180,7 +180,7 @@ export default function Experience() {
               ])}
               <h2 className="text-xl tracking-wide flex items-center mt-2">
                 Bukukas Kita
-                <span className='px-2 py-0.5 rounded-full ml-2 bg-red-200 text-xs'>live</span>
+                <span className='px-2 py-0.5 rounded-full ml-2 bg-red-200 text-xs'>offline</span>
               </h2>
               <div className=''>
                 {genTechStacks(["ruby on rails", "golang", "javascript", "reactjs", "postgresql"])}
@@ -310,9 +310,13 @@ export default function Experience() {
                 "/images/projects/ytkidd-thumb-2.png",
                 "/images/projects/ytkidd-thumb-3.png",
                 "/images/projects/ytkidd-thumb-4.png",
+                "/images/projects/ytkidd-thumb-5.png",
+                "/images/projects/ytkidd-thumb-6.png",
+                "/images/projects/ytkidd-thumb-7.png",
+                "/images/projects/ytkidd-thumb-8.png",
               ])}
               <h2 className="text-xl tracking-wide flex items-center mt-2">
-                YTKIDD
+                Cookie Kid
                 <span className='px-2 py-0.5 rounded-full ml-2 bg-red-200 text-xs'>live</span>
               </h2>
               <div className=''>
@@ -320,7 +324,7 @@ export default function Experience() {
               </div>
               <div className="flex flex-col justify-between min-h-28 mt-2">
                 <p className="text-sm tracking-wide">
-                  YTKIDD is a Youtube alternative for kids. The content listed in ytkidd is manually curated, so it should not recommend any video outside of the list. YTKIDD also have a quiz feature so that your kids need to answer the quiz first before start watching.
+                  Cookie kid is a entertainment platform for kids. It is kind of youtube kids but the content is personally curated, so it should not recommend any video outside of the curation. Cookie kid also have a quiz feature so that your kids need to answer the quiz first before start watching. There are also other features such as: reading book, work sheet which your kids can doodle on top of it, conversation with AI, etc.
                 </p>
                 <div className="card-actions justify-between items-center mt-2">
                   <div className='text-sm font-semibold'>
@@ -332,7 +336,7 @@ export default function Experience() {
                       "",
                       "https://github.com/umarkotak/ytkidd-nextjs",
                       "",
-                      "https://ytkidd.vercel.app",
+                      "https://cookiekid.vercel.app",
                     )}
                   </div>
                 </div>
@@ -353,11 +357,13 @@ export default function Experience() {
             </figure>
             <div className="p-4">
               {thumbsGen([
+                "/images/projects/vdub-thumb-2.png",
+                "/images/projects/vdub-thumb-3.png",
               ])}
               <h2 className="text-xl tracking-wide flex items-center mt-2">
                 VDUB
                 <span className='px-2 py-0.5 rounded-full ml-2 bg-red-200 text-xs'>live</span>
-                <span className='px-2 py-0.5 rounded-full ml-2 bg-red-200 text-xs'>dockerfile</span>
+                {/* <span className='px-2 py-0.5 rounded-full ml-2 bg-red-200 text-xs'>dockerfile</span> */}
               </h2>
               <div className=''>
                 {genTechStacks(["golang", "javascript", "nextjs"])}
@@ -376,7 +382,7 @@ export default function Experience() {
                       "https://github.com/umarkotak/vdub",
                       "",
                       "",
-                      "",
+                      "https://vdubb.vercel.app",
                     )}
                   </div>
                 </div>
@@ -401,7 +407,7 @@ export default function Experience() {
               ])}
               <h2 className="text-xl tracking-wide flex items-center mt-2">
                 Neng Gemini
-                <span className='px-2 py-0.5 rounded-full ml-2 bg-red-200 text-xs'>live</span>
+                <span className='px-2 py-0.5 rounded-full ml-2 bg-red-200 text-xs'>moved to cookie kid</span>
               </h2>
               <div className=''>
                 {genTechStacks(["nextjs"])}
@@ -420,7 +426,7 @@ export default function Experience() {
                       "",
                       "https://github.com/umarkotak/neng-gemini-nextjs",
                       "",
-                      "https://neng-gemini.vercel.app",
+                      "https://cookiekid.vercel.app/sahabat_ai/chat",
                     )}
                   </div>
                 </div>
