@@ -69,7 +69,7 @@ export default function ImprovedProjects() {
     {
       id: 4,
       title: "Satu Akun",
-      status: "offline",
+      status: "live",
       type: "personal",
       year: 2024,
       description: "Chrome extension for secure cookie sharing, allowing users to share account access (like Netflix) without revealing passwords - simply share cookies through the extension.",
@@ -80,7 +80,7 @@ export default function ImprovedProjects() {
         "/images/projects/satuakun-thumb-3.png",
       ],
       links: {
-        beGitUrl: "https://github.com/umarkotak/satu-akun-nextjs",
+        // beGitUrl: "https://github.com/umarkotak/satu-akun-nextjs",
         projectUrl: "https://satuakun.vercel.app"
       }
     },
