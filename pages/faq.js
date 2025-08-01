@@ -10,7 +10,7 @@ export default function Experience() {
 
             <ul className="text-sm">
               <li>
-                - CV May 2024:
+                - CV Aug 2025:
                 <Link
                   className="text-blue-600"
                   href="https://docs.google.com/document/d/1zxk0OJnqzLl7G22fqfeN4xyxt0rvNuKzzaRQjTm1oyk"
@@ -19,10 +19,10 @@ export default function Experience() {
                 </Link>
               </li>
               <li>
-                - CV May 2024 pdf:
+                - CV Aug 2025 pdf:
                 <Link
                   className="text-blue-600"
-                  href="/docs_data/cv-2024_may.pdf"
+                  href="/docs_data/cv-2025_aug.pdf"
                 >
                   cv pdf
                 </Link>
