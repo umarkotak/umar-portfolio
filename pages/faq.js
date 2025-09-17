@@ -19,10 +19,10 @@ export default function Experience() {
                 </Link>
               </li>
               <li>
-                - CV Aug 2025 pdf:
+                - CV Sep 2025 pdf:
                 <Link
                   className="text-blue-600"
-                  href="/docs_data/cv-2025_aug.pdf"
+                  href="/docs_data/cv-2025_sep.pdf"
                 >
                   cv pdf
                 </Link>
