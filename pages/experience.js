@@ -18,8 +18,31 @@ export default function Experience() {
   }
 
   const experiences = [
+    
     {
-      period: { start: "Sep 2023", end: "Present", duration: "Current" },
+      period: { start: "Feb 2026", end: "Present", duration: "Current" },
+      title: "Full Stack Engineer",
+      company: "Alakin Health",
+      location: "Indonesia",
+      logo: "/images/projects/logo_alakin_health.jpeg",
+      type: "development",
+      techStacks: ["python", "fast api", "postgresql", "react", "react native"],
+      description: "Bukukaskita is a web application for managing your family expenses",
+      highlights: [
+        "Record daily transaction with voice-to-transaction feature",
+        "Receipt image to transaction conversion",
+        "Dashboard showing current balance of each wallet",
+        "Statistical dashboard and budgeting tools",
+        "Investing simulation features",
+        "Gold prices wallet with loss and gain tracker",
+        "Wealth asset management system"
+      ],
+      links: [
+        { url: "https://www.alakinhealth.com", label: "Visit App" },
+      ]
+    },
+    {
+      period: { start: "Sep 2023", end: "Dec 2025", duration: "2 Yrs 3 Mo" },
       title: "Back End Engineer Lead",
       company: "Everywhere.id",
       location: "Indonesia",
@@ -42,29 +65,6 @@ Design 2 way online to offline entertainment system. playbox provide content cre
       links: [
         { url: "https://play.everywhere.id", label: "Play Everywhere" },
         { url: "https://github.com/umarkotak/go-kubeseal-gui", label: "Kubeseal GUI" }
-      ]
-    },
-    {
-      period: { start: "Jun 2021", end: "Present", duration: "Current" },
-      title: "Founder & Full Stack Engineer",
-      company: "Bukukaskita",
-      location: "Indonesia",
-      logo: "/images/projects/logo_bukukaskita.jpeg",
-      type: "founder",
-      techStacks: ["golang", "ruby on rails", "reactjs", "postgresql"],
-      description: "Bukukaskita is a web application for managing your family expenses",
-      highlights: [
-        "Record daily transaction with voice-to-transaction feature",
-        "Receipt image to transaction conversion",
-        "Dashboard showing current balance of each wallet",
-        "Statistical dashboard and budgeting tools",
-        "Investing simulation features",
-        "Gold prices wallet with loss and gain tracker",
-        "Wealth asset management system"
-      ],
-      links: [
-        { url: "https://bukukaskita.netlify.app", label: "Visit App" },
-        { url: "https://www.linkedin.com/company/bukukaskita", label: "LinkedIn" }
       ]
     },
     {

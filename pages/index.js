@@ -174,9 +174,9 @@ export default function Home() {
 
         {/* Contact Section */}
         <div className="bg-gradient-to-r from-orange-100 to-yellow-100 rounded-2xl p-8 text-center border border-orange-200">
-          <h3 className="text-2xl font-bold text-gray-800 mb-4">Let's Connect!</h3>
+          <h3 className="text-2xl font-bold text-gray-800 mb-4">Let&apos;s Connect!</h3>
           <p className="text-gray-600 mb-4">
-            If you're interested in collaborating or just want to chat about tech, feel free to reach out.
+            If you&apos;re interested in collaborating or just want to chat about tech, feel free to reach out.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link href="https://www.linkedin.com/in/muhammad-umar-ramadhana-476083141" className="flex items-center gap-2 bg-white hover:bg-blue-50 px-6 py-3 rounded-full shadow-sm border border-blue-200 transition-colors">

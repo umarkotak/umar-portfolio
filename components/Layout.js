@@ -1,19 +1,13 @@
 import { Briefcase, CircleUser, Home, Layers3, LayoutTemplate, Menu, X } from 'lucide-react'
 import Link from 'next/link'
-import { useParams, usePathname } from 'next/navigation'
-import { useEffect, useState } from 'react'
+import { usePathname } from 'next/navigation'
+import { useState } from 'react'
 
 var startWorkAt = 2019
 
 export default function Layout({ children }) {
   const pathname = usePathname()
-  const params = useParams()
   const [isDrawerOpen, setIsDrawerOpen] = useState(false)
-
-  useEffect(() => {
-    // Close drawer when route changes
-    setIsDrawerOpen(false)
-  }, [pathname])
 
   function genActive(pname, target) {
     return pname === target
@@ -120,6 +114,7 @@ export default function Layout({ children }) {
                   <li key={item.href}>
                     <Link
                       href={item.href}
+                      onClick={() => setIsDrawerOpen(false)}
                       className={`flex items-center space-x-3 px-4 py-3 rounded-xl text-sm font-medium transition-all duration-200 ${
                         isActive
                           ? 'bg-gradient-to-r from-yellow-100 to-orange-100 text-orange-700 shadow-sm border border-orange-200'

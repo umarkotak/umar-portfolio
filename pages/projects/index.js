@@ -9,9 +9,30 @@ export default function ImprovedProjects() {
 
   const projects = [
     {
+      id: 9,
+      title: "Cabocil",
+      status: "live",
+      type: "personal",
+      year: 2025,
+      description: "Entertainment platform for kids with personally curated content, quiz features, reading books, worksheets for doodling, AI conversation, and more - ensuring safe, educational content consumption.",
+      techStacks: ["golang", "javascript", "nextjs"],
+      mainImage: "/images/projects/ytkidd-thumb.png",
+      thumbnails: [
+        "/images/projects/ytkidd-thumb-2.png",
+        "/images/projects/ytkidd-thumb-3.png",
+        "/images/projects/ytkidd-thumb-4.png",
+        "/images/projects/ytkidd-thumb-5.png",
+        "/images/projects/ytkidd-thumb-6.png",
+      ],
+      links: {
+        projectUrl: "https://cabocil.com"
+      },
+      featured: true
+    },
+    {
       id: 1,
       title: "Live Everywhere",
-      status: "live",
+      status: "inactive",
       type: "work",
       year: 2023,
       description: "Everywhereid is a platform for content creators to do live streaming with breakthrough online-to-offline performance, allowing creators to live in multiple places at once such as malls, food courts, cafes, and train stations.",
@@ -25,12 +46,12 @@ export default function ImprovedProjects() {
       links: {
         projectUrl: "https://play.everywhere.id"
       },
-      featured: true
+      featured: false
     },
     {
       id: 2,
       title: "Cookie Kid",
-      status: "live",
+      status: "inactive",
       type: "personal",
       year: 2023,
       description: "Entertainment platform for kids with personally curated content, quiz features, reading books, worksheets for doodling, AI conversation, and more - ensuring safe, educational content consumption.",
@@ -47,12 +68,12 @@ export default function ImprovedProjects() {
         beGitUrl: "https://github.com/umarkotak/ytkidd-nextjs",
         projectUrl: "https://cookiekid.vercel.app"
       },
-      featured: true
+      featured: false
     },
     {
       id: 3,
       title: "Best LMS",
-      status: "on hold",
+      status: "inactive",
       type: "personal",
       year: 2024,
       description: "Learning Management System built for Indonesian schools with local/global hosting capabilities. Features include payment systems, content management, student/teacher management, and comprehensive school operations support.",
@@ -69,7 +90,7 @@ export default function ImprovedProjects() {
     {
       id: 4,
       title: "Satu Akun",
-      status: "live",
+      status: "inactive",
       type: "personal",
       year: 2024,
       description: "Chrome extension for secure cookie sharing, allowing users to share account access (like Netflix) without revealing passwords - simply share cookies through the extension.",
@@ -87,7 +108,7 @@ export default function ImprovedProjects() {
     {
       id: 5,
       title: "MarAI",
-      status: "live",
+      status: "inactive",
       type: "personal",
       year: 2024,
       description: "Automated tool for dubbing and transcripting with the help of LLM. The dubbing feature is limited to monologue English videos into Indonesian. The transcript feature have LLM integrated in it so after the transcription is done you can discuss the transcript with the LLM. Fully offline powered by open source tools, whisper and ollama.",
@@ -101,12 +122,12 @@ export default function ImprovedProjects() {
       links: {
         projectUrl: "https://kumarai.vercel.app"
       },
-      featured: true
+      featured: false
     },
     {
       id: 6,
       title: "Bukukas Kita",
-      status: "offline",
+      status: "inactive",
       type: "personal",
       year: 2020,
       description: "Comprehensive expense tracking app with investment calculator, gold price tracker, and innovative transaction recording using image and voice recognition.",
@@ -143,7 +164,7 @@ export default function ImprovedProjects() {
     {
       id: 8,
       title: "Go Kubeseal GUI",
-      status: "active",
+      status: "inactive",
       type: "personal",
       year: 2024,
       description: "GUI helper tool for managing Kubeseal and Kubesecret operations, simplifying Kubernetes secret management workflows.",
@@ -187,7 +208,7 @@ export default function ImprovedProjects() {
       case 'live': return 'bg-green-100 text-green-800 border-green-200'
       case 'active': return 'bg-blue-100 text-blue-800 border-blue-200'
       case 'on hold': return 'bg-yellow-100 text-yellow-800 border-yellow-200'
-      case 'offline': return 'bg-red-100 text-red-800 border-red-200'
+      case 'inactive': return 'bg-red-100 text-red-800 border-red-200'
       case 'moved to cookie kid': return 'bg-blue-100 text-blue-800 border-blue-200'
       default: return 'bg-gray-100 text-gray-800 border-gray-200'
     }
@@ -383,7 +404,7 @@ export default function ImprovedProjects() {
           </h1>
           <p className="text-gray-600 text-xl max-w-3xl mx-auto leading-relaxed">
             Crafting digital solutions that make a difference. From work projects to personal experiments,
-            here's a showcase of my journey in building meaningful software.
+            here&apos;s a showcase of my journey in building meaningful software.
           </p>
         </div>
 
