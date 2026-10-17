@@ -4,7 +4,7 @@ A playful, lightweight portfolio built with React, Vite, and Bun.
 
 ## Develop
 
-Use Node.js 26.12.0 (Current) and Bun 1.3.14. With nvm:
+Use Node.js 24.22.0 (LTS, compatible with Vercel’s Node.js 24 runtime) and Bun 1.4.3. With nvm:
 
 ```sh
 nvm install
