@@ -4,7 +4,11 @@ A playful, lightweight portfolio built with React, Vite, and Bun.
 
 ## Develop
 
+Use Node.js 26.12.0 (Current) and Bun 1.3.14. With nvm:
+
 ```sh
+nvm install
+nvm use
 bun install
 bun run dev
 ```
