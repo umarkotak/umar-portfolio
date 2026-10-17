@@ -1,0 +1,7 @@
+Tool: built-in image_gen (image edit)
+Source: public/images/me.png
+Output master: public/images/me-enhanced.png
+Website asset: public/media/me-enhanced.webp
+
+Final prompt:
+Use case: identity-preserve. Edit target: the provided photo of Umar, for his personal software engineer portfolio. Enhance this exact photograph, keeping the same person, facial features and proportions, smile, glasses, haircut, facial hair, natural skin texture, apparent age, pose, Gojek shirt and green lanyard. Preserve full color, natural skin tone, original composition and portrait aspect ratio. Improve the dim lighting with soft natural editorial portrait lighting, gently lift facial shadows, correct the green cast, recover subtle detail and reduce compression noise. Keep the original office/event background recognizable, slightly soften distracting background detail and remove only the cropped white hashtag at the far right. A warm, authentic, approachable portrait that fits an off-white paper and lime green creative portfolio. Do not stylize, cartoonize, change clothing or add objects, do not change expression, beautify facial structure, whiten teeth unnaturally, smooth away skin texture, add excessive sharpening or HDR. Deliver only the enhanced photograph, no frame, graphics, captions or watermark.
