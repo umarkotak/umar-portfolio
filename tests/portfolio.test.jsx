@@ -54,6 +54,8 @@ test('all career chapters render with the current role expanded', () => {
   const html = render(<Experience />)
   expect(html.match(/<details/g)).toHaveLength(experiences.length)
   expect(html.match(/<details[^>]* open=""/g)).toHaveLength(1)
+  expect(html).toContain('href="/cv"')
+  expect(html).toContain('download="Muhammad-Umar-Ramadhana-CV.pdf"')
   expect(html).toContain('Feb 2026')
   expect(html).toContain('Alakin Health')
   expect(html.match(/<details/g)).toHaveLength(5)

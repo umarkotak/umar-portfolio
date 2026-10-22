@@ -30,9 +30,8 @@ export default function Experience() {
           <span aria-hidden="true">↶</span>
         </span>
         <a
-          href="/docs_data/data-umar-v7.pdf"
-          target="_blank"
-          rel="noreferrer"
+          href="/cv"
+          download="Muhammad-Umar-Ramadhana-CV.pdf"
           className="text-link"
         >
           Résumé <span className="mono">PDF</span>

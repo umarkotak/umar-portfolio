@@ -29,7 +29,7 @@ bun run preview
 - `src/index.css` — responsive design, typography, and reduced-motion support.
 - `public/images/projects/<project>/` — original screenshots, optimized WebP copies, and related logos grouped by project. Cabocil and Cookie Kid share the `cabocil/` assets.
 - `public/media/` — optimized profile photo.
-- `public/docs_data/` — résumé and documents. The linked résumé is `data-umar-v7.pdf`.
+- `public/docs_data/` — résumé and documents. `/cv` downloads the latest CV, currently `data-umar-v7.pdf`, as `Muhammad-Umar-Ramadhana-CV.pdf`. Older CV versions have already been removed.
 
 The site uses React Router, a locally served variable font, CSS transitions,
 native expandable career entries, and a native modal with keyboard and focus support.
