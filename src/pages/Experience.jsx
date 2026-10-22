@@ -1,3 +1,4 @@
+import { Link } from 'react-router'
 import { Arrow, Star } from '../components/Icons'
 import { experiences } from '../data'
 
@@ -29,14 +30,10 @@ export default function Experience() {
           Learn <Arrow /> Build <Arrow /> Lead <Arrow /> Keep learning{' '}
           <span aria-hidden="true">↶</span>
         </span>
-        <a
-          href="/cv"
-          download="Muhammad-Umar-Ramadhana-CV.pdf"
-          className="text-link"
-        >
+        <Link to="/cv" className="text-link">
           Résumé <span className="mono">PDF</span>
           <Arrow diagonal />
-        </a>
+        </Link>
       </div>
       <section className="timeline" aria-label="Work experience">
         {experiences.map((experience, index) => (

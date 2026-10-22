@@ -1,7 +1,7 @@
 {
   "headers": [
     {
-      "source": "/cv",
+      "source": "/cv/download",
       "headers": [
         { "key": "Content-Type", "value": "application/pdf" },
         {
@@ -12,7 +12,7 @@
     }
   ],
   "rewrites": [
-    { "source": "/cv", "destination": "/docs_data/data-umar-v7.pdf" },
+    { "source": "/cv/download", "destination": "/docs_data/data-umar-v7.pdf" },
     { "source": "/((?!.*\\.).*)", "destination": "/index.html" }
   ]
 }

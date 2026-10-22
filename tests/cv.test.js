@@ -18,8 +18,8 @@ afterAll(async () => {
   await server?.close()
 })
 
-test('/cv returns the latest PDF as a named download, even for browser navigation', async () => {
-  const response = await fetch(`${origin}/cv`, { headers: { Accept: 'text/html' } })
+test('/cv/download returns the latest PDF as a named download, even for browser navigation', async () => {
+  const response = await fetch(`${origin}/cv/download`, { headers: { Accept: 'text/html' } })
   expect(response.status).toBe(200)
   expect(response.headers.get('content-type')).toContain('application/pdf')
   expect(response.headers.get('content-disposition')).toBe(
@@ -29,8 +29,8 @@ test('/cv returns the latest PDF as a named download, even for browser navigatio
   expect(Buffer.from(await response.arrayBuffer())).toEqual(Buffer.from(expected))
 })
 
-test('/cv handles query strings and HEAD requests', async () => {
-  const response = await fetch(`${origin}/cv?download=1`, { method: 'HEAD' })
+test('/cv/download handles query strings and HEAD requests', async () => {
+  const response = await fetch(`${origin}/cv/download?download=1`, { method: 'HEAD' })
   expect(response.status).toBe(200)
   expect(response.headers.get('content-type')).toContain('application/pdf')
   expect(response.headers.get('content-disposition')).toContain('attachment;')
@@ -47,7 +47,16 @@ test('regular pages keep the SPA fallback without a download header', async () =
 
 test('Vercel serves the CV before applying its SPA fallback', () => {
   expect(hosting.rewrites[0]).toEqual({
-    source: '/cv',
+    source: '/cv/download',
     destination: '/docs_data/data-umar-v7.pdf',
   })
+})
+
+
+test('/cv is an HTML page and never forces a download on arrival', async () => {
+  const response = await fetch(`${origin}/cv`, { headers: { Accept: 'text/html' } })
+  expect(response.status).toBe(200)
+  expect(response.headers.get('content-type')).toContain('text/html')
+  expect(response.headers.get('content-disposition')).toBeNull()
+  expect(await response.text()).toContain('<div id="root"></div>')
 })

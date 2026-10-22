@@ -4,10 +4,10 @@ import hosting from './vercel.json' with { type: 'json' }
 
 // Match the production download route in development and build previews.
 function serveCv(server) {
-  const route = hosting.rewrites.find(({ source }) => source === '/cv')
-  const { headers } = hosting.headers.find(({ source }) => source === '/cv')
+  const route = hosting.rewrites.find(({ source }) => source === '/cv/download')
+  const { headers } = hosting.headers.find(({ source }) => source === '/cv/download')
   server.middlewares.use((req, res, next) => {
-    if (req.url?.split('?')[0] === '/cv') {
+    if (req.url?.split('?')[0] === '/cv/download') {
       for (const { key, value } of headers) res.setHeader(key, value)
       req.url = route.destination
     }

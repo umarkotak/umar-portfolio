@@ -4,6 +4,7 @@ import { renderToStaticMarkup } from 'react-dom/server'
 import { MemoryRouter } from 'react-router'
 import Home from '../src/pages/Home'
 import Experience from '../src/pages/Experience'
+import Cv from '../src/pages/Cv'
 import Projects from '../src/pages/Projects'
 import ProjectDialog from '../src/components/ProjectDialog'
 import { projects, experiences } from '../src/data'
@@ -55,7 +56,6 @@ test('all career chapters render with the current role expanded', () => {
   expect(html.match(/<details/g)).toHaveLength(experiences.length)
   expect(html.match(/<details[^>]* open=""/g)).toHaveLength(1)
   expect(html).toContain('href="/cv"')
-  expect(html).toContain('download="Muhammad-Umar-Ramadhana-CV.pdf"')
   expect(html).toContain('Feb 2026')
   expect(html).toContain('Alakin Health')
   expect(html.match(/<details/g)).toHaveLength(5)
@@ -103,4 +103,17 @@ test('Marpos has a POS description and both screenshots in its detail gallery', 
   expect(html).toContain('marpos/marpos-2.webp')
   expect(html).toContain('aria-label="Next screenshot"')
   expect(html).not.toContain('undefined')
+})
+
+
+test('the CV page offers a deliberate download and a separate PDF preview', () => {
+  const html = render(<Cv />)
+  expect(html).toContain('href="/cv/download"')
+  expect(html).toContain('download="Muhammad-Umar-Ramadhana-CV.pdf"')
+  expect(html).toContain('Download CV')
+  expect(html).toContain('href="/docs_data/data-umar-v7.pdf"')
+  expect(html).toContain('Open PDF')
+  expect(html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ')).toContain(
+    'Muhammad Umar Ramadhana',
+  )
 })

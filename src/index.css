@@ -3113,6 +3113,52 @@ main:focus {
     font-size: 32px;
   }
 }
+.cv-page {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: clamp(40px, 6vw, 90px);
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+.cv-intro > .eyebrow { margin-bottom: 26px; line-height: 1.8; }
+.cv-intro h1 { font-size: clamp(64px, 6.5vw, 90px); letter-spacing: -4px; line-height: 1.1; }
+.cv-description { font-size: 17px; line-height: 1.9; color: var(--muted); max-width: 440px; margin-top: 29px; }
+.cv-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 26px; margin-top: 30px; }
+.cv-download-arrow { transform: rotate(90deg); }
+.cv-format { font-size: 14px; line-height: 1.8; color: var(--muted); margin-top: 22px; }
+.cv-journey { margin-top: 34px; font-size: 14px; line-height: 1.8; }
+.cv-paper {
+  position: relative;
+  border: 1px solid #b9bfaa;
+  border-radius: 5px;
+  background: #fffef8;
+  padding: 32px;
+  box-shadow: 7px 7px 0 #e5e9d8;
+  transform: rotate(2deg);
+  min-width: 0;
+}
+.cv-paper .tape { left: calc(50% - 45px); }
+.cv-paper-top { display: flex; justify-content: space-between; align-items: center; gap: 15px; }
+.cv-paper-top .mono { font-size: 14px; }
+.cv-paper-top svg { width: 35px; color: #62773b; }
+.cv-photo { width: 80px; height: 80px; border: 1px solid var(--line); border-radius: 50%; object-fit: cover; object-position: center 25%; margin-top: 26px; }
+.cv-paper h2 { font-size: clamp(26px, 2.6vw, 34px); letter-spacing: -1px; line-height: 1.15; margin-top: 22px; }
+.cv-role { font-size: 17px; margin-top: 12px; }
+.cv-location { display: flex; align-items: center; gap: 7px; font-size: 14px; color: var(--muted); margin-top: 9px; }
+.cv-paper-notes { margin-block: 25px; padding-top: 20px; border-top: 1px solid var(--line); }
+.cv-paper-notes p { display: flex; gap: 13px; font-size: 14px; line-height: 1.8; margin-bottom: 12px; }
+.cv-paper-notes p > span { font-family: ui-monospace, monospace; color: #526239; }
+.cv-signature { display: block; text-align: right; font-size: 17px; color: #4c5144; }
+@media (max-width: 800px) {
+  .cv-page { grid-template-columns: 1fr; gap: 54px; padding-top: 45px; padding-bottom: 65px; }
+  .cv-intro h1 { font-size: clamp(56px, 11vw, 76px); letter-spacing: -3px; }
+  .cv-description { font-size: 16px; }
+  .cv-paper { max-width: 450px; width: calc(100% - 10px); justify-self: center; padding: 25px; }
+  .cv-paper h2 { font-size: 29px; }
+  .cv-journey { align-items: flex-start; }
+  .cv-journey svg { margin-top: 3px; }
+}
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

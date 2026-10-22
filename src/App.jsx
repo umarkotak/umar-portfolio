@@ -12,6 +12,7 @@ import ProjectDialog from './components/ProjectDialog'
 import Home from './pages/Home'
 import Experience from './pages/Experience'
 import Projects from './pages/Projects'
+import Cv from './pages/Cv'
 import { contact } from './data'
 
 function Portfolio() {
@@ -28,7 +29,9 @@ function Portfolio() {
           ? 'Experience'
           : pathname === '/projects'
             ? 'Projects'
-            : 'Page not found'
+            : pathname === '/cv'
+              ? 'CV'
+              : 'Page not found'
     document.title = `${title} — Umar Ramadhana`
     if (previousPath.current !== pathname) {
       window.scrollTo({ top: 0, behavior: 'instant' })
@@ -72,6 +75,7 @@ function Portfolio() {
           <Routes>
             <Route path="/" element={<Home onProjectOpen={setProject} />} />
             <Route path="/experience" element={<Experience />} />
+            <Route path="/cv" element={<Cv />} />
             <Route
               path="/projects"
               element={<Projects onProjectOpen={setProject} />}
